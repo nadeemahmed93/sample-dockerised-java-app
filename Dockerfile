@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-MAINTAINER Steve Wade <swade@apprenda.com>
+MAINTAINER Nadeem Ahmed <nadeem.ahmed1@gds.ey.com>
 
 ARG git_repository="Unknown"
 ARG git_commit="Unknown"
