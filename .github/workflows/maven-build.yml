@@ -13,7 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Clone Repository
         with:
           repository: 'nadeemahmed93/sample-dockerised-java-app@v1.0.0'
           ref: 'master'
