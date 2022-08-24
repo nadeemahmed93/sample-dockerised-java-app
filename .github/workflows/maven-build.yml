@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI Java Maven Build
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: "nadeemahmed93/sample-dockerised-java-app@v1.0.0"
+      - name: Clone Repository
+        with: "master"
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
