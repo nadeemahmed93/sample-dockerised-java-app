@@ -12,11 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: "nadeemahmed93/sample-dockerised-java-app@v1.0.0"
+      - uses: actions/checkout@v3
       - name: Clone Repository
-        with: "master"
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        with:
+          repository: 'nadeemahmed93/sample-dockerised-java-app@v1.0.0'
+          ref: 'master'
