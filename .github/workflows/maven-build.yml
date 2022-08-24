@@ -17,3 +17,5 @@ jobs:
         with:
           repository: 'nadeemahmed93/sample-dockerised-java-app@v1.0.0'
           ref: 'master'
+      - name: Build with Maven
+        run: mvn --batch-mode --update-snapshots package
